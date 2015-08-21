@@ -8,6 +8,11 @@ Installation
 - or run `npm install ionic-process-spinner`
 - or download zip from release page: https://github.com/KillerCodeMonkey/ionic-process-spinner/releases
 
+Demo
+====
+![ionic-process-spinner](https://cloud.githubusercontent.com/assets/2264672/9417552/9409205c-484d-11e5-9364-7e2ab0f0c293.png)
+![ionic-process-spinner-active](https://cloud.githubusercontent.com/assets/2264672/9417551/93f86136-484d-11e5-8bb8-45b4525df3d2.png)
+
 Usage
 =====
 - load ionic, ionic-process-spinner scripts in your index.html
