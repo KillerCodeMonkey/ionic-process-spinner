@@ -1,6 +1,6 @@
 # ionic-process-spinner
 
-ionic-process-spinner is an [Angular.js](http://angularjs.org/) and [Ionic Framework](http://ionicframework.com/) extension. It provides the ionProcessSpinner to show a loading spinner until a process has finished. It replaces the child content with a loading spinner while processing.
+ionic-process-spinner is an [Angular.js](http://angularjs.org/) and [Ionic Framework](http://ionicframework.com/) extension. It provides the ionProcessSpinner directive to show a loading spinner until a process has finished. It replaces the child content with a loading spinner while processing.
 
 Installation
 ============

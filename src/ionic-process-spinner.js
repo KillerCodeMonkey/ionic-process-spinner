@@ -15,7 +15,7 @@
                 },
                 restrict: 'E',
                 transclude: true,
-                template: '<span ng-transclude="" ng-if="!processing"></span><ion-spinner ng-if="processing" ng-class="cssClass" class="center" icon="{{spinner || \'crescent\'}}"></ion-spinner>'
+                template: '<div ng-transclude="" ng-if="!processing"></div><ion-spinner ng-if="processing" ng-class="cssClass" class="center" icon="{{spinner || \'crescent\'}}"></ion-spinner>'
             };
         }
     ]);
