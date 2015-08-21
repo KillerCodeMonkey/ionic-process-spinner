@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>ionicProcessSpinner Test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta charset="utf-8">
+
+        <!-- Style -->
+        <link rel="stylesheet" href="bower_components/ionic/release/css/ionic.min.css">
+        <!-- Scripts -->
+        <script type="text/javascript" src="bower_components/ionic/release/js/ionic.bundle.min.js"></script>
+        <script type="text/javascript" src="src/ionic-process-spinner.min.js"></script>
+        <script>
+            // declare a module and load quillModule
+            var myAppModule = angular.module('scrollerTest', ['ionic', 'ionicProcessSpinner']);
+            myAppModule.controller('MainCtrl', [
+                '$scope',
+                '$timeout',
+                function ($scope, $timeout) {
+                  $scope.save = function () {
+                    $scope.processing = true;
+                    $timeout(function () {
+                      $scope.processing = false;
+                    }, 3000);
+                  };
+                }
+            ]);
+        </script>
+    </head>
+    <body ng-app="scrollerTest" ng-controller="MainCtrl" style="background-color: #eee;">
+        <ion-header-bar class="bar-dark">
+            <h1 class="title">Process-Spinner</h1>
+        </ion-header-bar>
+        <ion-content delegate-handle="main">
+            <form id="myForm" ng-submit="!processing && save()">
+              <div class="list list-inset">
+                  <label class="item item-input">
+                      <input type="text" placeholder="First Name">
+                  </label>
+                  <label class="item item-input">
+                      <input type="text" placeholder="Last Name">
+                  </label>
+              </div>
+            </form>
+        </ion-content>
+        <ion-footer-bar class="bar-dark">
+            <ion-process-spinner style="width:100%; text-align: center;" processing="processing" spinner="bubbles" css-class="spinner-balanced">
+                <button form="myForm" style="width: 90%" class="button button-balanced">Save</button>
+            </ion-process-spinner>
+        </ion-footer-bar>
+    </body>
+</html>
