@@ -21,5 +21,5 @@ Usage
 Configuration
 =============
 - set spinner: `spinner="crescent"` (optional, default: platform dependent)
-- set if processing: `processing="isPricessing"` (required), a scope variable to switch content with loading spinner
+- set if processing: `processing="isProcessing"` (required), a scope variable to switch content with loading spinner
 - css-class: `css-class="spinner calm"` (optional), a optional css-class to style the spinner
