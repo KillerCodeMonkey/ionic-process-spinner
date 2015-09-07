@@ -28,3 +28,7 @@ Configuration
 - set spinner: `spinner="crescent"` (optional, default: platform dependent)
 - set if processing: `processing="isProcessing"` (required), a scope variable to switch content with loading spinner
 - css-class: `css-class="spinner-calm"` (optional), a optional css-class to style the spinner
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/KillerCodeMonkey/ionic-process-spinner/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
